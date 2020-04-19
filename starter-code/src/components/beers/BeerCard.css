@@ -1,0 +1,17 @@
+.beerCard {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  height: 140px;
+  border-bottom: 1px solid gray;
+}
+
+.beerCard img {
+  width: 30px;
+}
+
+.info {
+  margin: 10px 30px;
+  color: rgb(95, 95, 95);
+}
+
