@@ -1,18 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './BeerCard.css'
+import styles from './BeerCard.module.css'
 
-export const BeerCard = ({imageUrl, name, tagline, contributed_by, id}) => {
+export const BeerCard = ({beer, children}) => {
+  console.log(beer)
+  console.log(beer.imageUrl)
   return (
-		<Link to={`/beers/${id}`}>
-    <article className='beerCard'>
+		<Link to={`/beers/${beer._id}`}>
+    <article className={styles.beerCard}>
       <div>
-        <img src={imageUrl} alt={name}/>
+        <img src={beer.image_url} alt={beer.name}/>
       </div>
-      <div className='info'>
-        <h3 >{name}</h3>
-        <h4 >{tagline}</h4>
-        <p ><strong>Created by:</strong> {contributed_by}</p>
+      <div className={styles.info}>
+        <h3 >{beer.name}</h3>
+        <h4 >{beer.tagline}</h4>
+        {children}
+        <p ><strong>Created by:</strong> {beer.contributed_by}</p>
       </div>
     </article>
 		</Link>

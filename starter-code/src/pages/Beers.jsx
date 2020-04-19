@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
 import { BeerCard } from '../components/beers/BeerCard';
@@ -14,14 +14,9 @@ export const Beers = () => {
   return (
     <div>
       {beers.map((beer) =>
-				<BeerCard key={beer._id}
-					  imageUrl={beer.image_url}
-					  name={beer.name}
-					  tagline={beer.tagline}
-					  contributed_by={beer.contributed_by}
-					  id={beer._id}
-				/>
+				<BeerCard key={beer._id} beer={beer}/>
 			)}
     </div>
   )
 }
+

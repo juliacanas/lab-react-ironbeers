@@ -1,8 +1,7 @@
 import React from 'react'
-import { HomeSection } from './HomeSection'
+import { HomeSection } from '../components/home/HomeSection'
 
 export const Home = () => {
-
   const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae bibendum urna. Aliquam scelerisque vestibulum eros. Suspendisse consectetur placerat dolor eleifend rhoncus.';
 
   return (
