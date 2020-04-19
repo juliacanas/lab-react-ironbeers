@@ -7,7 +7,7 @@ import { Navbar } from './components/navbar/Navbar';
 import { Home } from './pages/Home';
 import { Beers } from './pages/Beers';
 import { BeerDetails } from './pages/BeerDetails';
-import { NewBeer } from './pages/NewBeer';
+import { NewBeer } from './pages/newBeer/NewBeer';
 
 const Routes = () => {
   return (

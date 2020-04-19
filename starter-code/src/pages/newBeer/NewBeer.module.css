@@ -1,0 +1,29 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  border: 0;
+  border-bottom: 1px solid #39c;
+  margin: 20px 0;
+}
+
+.container input:placeholder-shown {
+  padding: 10px;
+}
+
+.btn {
+  border: 0;
+  background-color: deepskyblue;
+  width: 30%;
+  height: 20px;
+  color: white;
+  border-radius: 10px;
+  margin: 20px 0;
+}

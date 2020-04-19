@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './BeerCard.module.css'
 
 export const BeerCard = ({beer, children}) => {
-  console.log(beer)
-  console.log(beer.imageUrl)
+
   return (
 		<Link to={`/beers/${beer._id}`}>
     <article className={styles.beerCard}>
