@@ -4,9 +4,9 @@ import { Switch, Route } from 'react-router-dom';
 
 import { Navbar } from './components/navbar/Navbar';
 import { Home } from './components/home/Home';
-import { Beers } from './components/beers/Beers';
-import { BeerDetails } from './components/BeerDetails';
-import { NewBeer } from './components/NewBeer';
+import { Beers } from './pages/Beers';
+import { BeerDetails } from './pages/BeerDetails';
+import { NewBeer } from './pages/NewBeer';
 
 const Routes = () => {
   return (

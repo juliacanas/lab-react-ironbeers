@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 
-import { BeerCard } from './BeerCard';
+import { BeerCard } from '../components/beers/BeerCard';
 
 export const Beers = () => {
   const [beers, setBeers] = useState([]);
